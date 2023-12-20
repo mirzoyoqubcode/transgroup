@@ -1,0 +1,39 @@
+.wrapper_footer {
+  .container_footer {
+    width: 70%;
+    margin: 3rem auto;
+    background-color: #1b8545;
+    color: white;
+    border-radius: 10px;
+    padding: 4rem 1rem;
+    max-height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 40px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .emails {
+      margin: 2rem 0;
+    }
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid white;
+    cursor: pointer;
+    &:hover {
+      background-color: #1b8545;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+}

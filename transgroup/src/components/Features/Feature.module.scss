@@ -1,0 +1,29 @@
+.results_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  .borders {
+    border-right: 1px solid #e2e5f1;
+    border-left: 1px solid #e2e5f1;
+    @media only screen and (max-width: 1000px) {
+      border: none;
+    }
+  }
+  article {
+    padding: 1rem 2rem;
+    text-align: center;
+    max-width: 400px;
+    h1 {
+      margin: 10px 0;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 80%;
+      margin: auto;
+      margin: 1rem;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}

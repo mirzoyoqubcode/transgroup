@@ -1,0 +1,100 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.411);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  .logo > img {
+    width: 200px;
+  }
+  @media (max-width: 1200px) {
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      list-style-type: none;
+      margin: 20px;
+      cursor: pointer;
+      @media only screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+  .lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      img {
+        width: 20px;
+        object-fit: contain;
+        height: 20px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.navMenu {
+  z-index: 999;
+  color: white;
+  width: 100%;
+  top: 78px;
+  position: absolute;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.58);
+  transition: 0.5s ease;
+  overflow: hidden;
+  text-align: center;
+  .mobilelang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  li {
+    list-style: none;
+    margin: 25px 0;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: aliceblue;
+      color: black;
+    }
+  }
+}
+.menu {
+  display: none;
+  font-size: 2rem;
+  padding: 0 10px;
+  cursor: pointer;
+  @media (max-width: 1200px) {
+    display: block;
+  }
+}
+.showMenu {
+  height: 400px;
+}
